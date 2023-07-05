@@ -1,6 +1,6 @@
 /* Center the content */
 body {
-    display: flex;
+    display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -11,13 +11,15 @@ body {
 }
 
 h1 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-style: italic;
     color: #333333;
 
 }
 
 label {
+    font-size: medium;
+    margin-bottom: 6px;
     font-weight: bold;
     font-style: italic;
 }
@@ -34,13 +36,15 @@ select {
 
 /* Style the Sudoku grid */
 #sudoku-grid {
+    display: flex;
     border-collapse: separate;
     border-spacing: 6px;
 }
 
 td {
-    width: 40px;
-    height: 40px;
+
+    width: 55px;
+    height: 55px;
     text-align: center;
 }
 
@@ -389,9 +393,9 @@ input {
 #solve-button {
     background-color: #7FFFD4;
 
-    margin-left: 36px;
-    margin-top: 8px;
-    padding: 8px 25px;
+    margin-left: 88px;
+    margin-top: 5px;
+    padding: 5px 30px;
     border-radius: 10px;
     font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
@@ -400,8 +404,8 @@ input {
 
 #generate-problem-button {
     background-color: #FF9999;
-    margin-top: 8px;
-    padding: 8px 25px;
+    margin-top: 5px;
+    padding: 5px 30px;
     border-radius: 10px;
     font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
@@ -410,9 +414,9 @@ input {
 #clear-button {
     background-color: #7FFFD4;
     margin-left: 6px;
-    margin-right: 36px;
-    margin-top: 8px;
-    padding: 8px 25px;
+    margin-right: 90px;
+    margin-top: 5px;
+    padding: 5px 30px;
     border-radius: 10px;
     font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
