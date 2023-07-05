@@ -1,0 +1,420 @@
+/* Center the content */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #FFE6E6;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #333333;
+
+}
+
+label {
+    font-weight: bold;
+    font-style: italic;
+}
+
+select {
+    padding: 2px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #FF9999;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style the Sudoku grid */
+#sudoku-grid {
+    border-collapse: separate;
+    border-spacing: 6px;
+}
+
+td {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 24px;
+    text-align: center;
+}
+
+#sudoku-grid tr:nth-last-child(9) td:nth-last-child(9) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(9) td:nth-last-child(8) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(9) td:nth-last-child(7) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(8) td:nth-last-child(9) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(7) td:nth-last-child(9) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(8) td:nth-last-child(8) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(7) td:nth-last-child(8) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(8) td:nth-last-child(7) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(7) td:nth-last-child(7) input {
+    background-color: #FFB3B3;
+}
+
+
+#sudoku-grid tr:nth-last-child(9) td:nth-last-child(6) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(9) td:nth-last-child(5) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(9) td:nth-last-child(4) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(8) td:nth-last-child(6) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(7) td:nth-last-child(6) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(8) td:nth-last-child(5) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(7) td:nth-last-child(5) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(8) td:nth-last-child(4) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(7) td:nth-last-child(4) input {
+    background-color: #FFCCCC;
+}
+
+
+#sudoku-grid tr:nth-last-child(9) td:nth-last-child(3) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(9) td:nth-last-child(2) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(9) td:nth-last-child(1) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(8) td:nth-last-child(3) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(7) td:nth-last-child(3) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(8) td:nth-last-child(2) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(7) td:nth-last-child(2) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(8) td:nth-last-child(1) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(7) td:nth-last-child(1) input {
+    background-color: #FFB3B3;
+}
+
+
+#sudoku-grid tr:nth-last-child(6) td:nth-last-child(9) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(5) td:nth-last-child(8) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(4) td:nth-last-child(7) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(4) td:nth-last-child(9) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(5) td:nth-last-child(9) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(6) td:nth-last-child(8) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(4) td:nth-last-child(8) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(5) td:nth-last-child(7) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(6) td:nth-last-child(7) input {
+    background-color: #FFCCCC;
+}
+
+
+
+#sudoku-grid tr:nth-last-child(6) td:nth-last-child(6) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(5) td:nth-last-child(5) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(4) td:nth-last-child(4) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(6) td:nth-last-child(5) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(5) td:nth-last-child(6) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(4) td:nth-last-child(6) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(4) td:nth-last-child(5) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(5) td:nth-last-child(4) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(6) td:nth-last-child(4) input {
+    background-color: #FFB3B3;
+}
+
+
+
+#sudoku-grid tr:nth-last-child(6) td:nth-last-child(3) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(5) td:nth-last-child(2) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(4) td:nth-last-child(1) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(6) td:nth-last-child(1) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(5) td:nth-last-child(1) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(4) td:nth-last-child(2) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(6) td:nth-last-child(2) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(5) td:nth-last-child(3) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(4) td:nth-last-child(3) input {
+    background-color: #FFCCCC;
+}
+
+
+#sudoku-grid tr:nth-last-child(3) td:nth-last-child(3) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(2) td:nth-last-child(2) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(1) td:nth-last-child(1) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(3) td:nth-last-child(1) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(2) td:nth-last-child(1) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(1) td:nth-last-child(2) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(3) td:nth-last-child(2) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(2) td:nth-last-child(3) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(1) td:nth-last-child(3) input {
+    background-color: #FFB3B3;
+}
+
+
+#sudoku-grid tr:nth-last-child(3) td:nth-last-child(4) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(2) td:nth-last-child(5) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(1) td:nth-last-child(6) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(3) td:nth-last-child(6) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(2) td:nth-last-child(6) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(1) td:nth-last-child(5) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(3) td:nth-last-child(5) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(2) td:nth-last-child(4) input {
+    background-color: #FFCCCC;
+}
+
+#sudoku-grid tr:nth-last-child(1) td:nth-last-child(4) input {
+    background-color: #FFCCCC;
+}
+
+
+#sudoku-grid tr:nth-last-child(3) td:nth-last-child(9) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(2) td:nth-last-child(8) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(1) td:nth-last-child(7) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(3) td:nth-last-child(7) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(2) td:nth-last-child(9) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(1) td:nth-last-child(8) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(3) td:nth-last-child(8) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(2) td:nth-last-child(7) input {
+    background-color: #FFB3B3;
+}
+
+#sudoku-grid tr:nth-last-child(1) td:nth-last-child(9) input {
+    background-color: #FFB3B3;
+}
+
+#solve-button {
+    background-color: #7FFFD4;
+
+    margin-left: 36px;
+    margin-top: 8px;
+    padding: 8px 25px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px wheat;
+}
+
+#generate-problem-button {
+    background-color: #FF9999;
+    margin-top: 8px;
+    padding: 8px 25px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px wheat;
+}
+#clear-button {
+    background-color: #7FFFD4;
+    margin-left: 6px;
+    margin-right: 36px;
+    margin-top: 8px;
+    padding: 8px 25px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px wheat;
+}
