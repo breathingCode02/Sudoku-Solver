@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" type="text/css" href="sudoku.css">
+</head>
+
+<body>
+    <h1>The Sudoku Solver</h1>
+    <label for="Deficulty">Choose Level:</label>
+    <select id="Deficulty">
+        <option value="Easy" selected >Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Expert">Expert</option>
+    </select>
+    <div id="sudoku-container">
+    <table id="sudoku-grid">
+        <!-- 9x9 grid -->
+        <tbody>
+            <tr>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+            </tr>
+            <tr>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+            </tr>
+            <tr>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                
+            </tr>
+            <tr>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                
+            </tr>
+            <tr>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                
+            </tr>
+            <tr>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                
+            </tr>
+            <tr>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                
+            </tr>
+            <tr>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                
+            </tr>
+            <tr>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+                <td><input type="text" maxlength="1"></td>
+               
+            </tr>
+           
+        </tbody>
+    </table>
+    <button id="clear-button">Clear</button>
+    <button id="generate-problem-button">New-Game</button>
+    
+    <button id="solve-button">Solve</button>
+
+    
+    </div>
+    <script src="sudoku.js"></script>
+    <script src="clear.js"></script>
+
+</body>
+
+</html>
